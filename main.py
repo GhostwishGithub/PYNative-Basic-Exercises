@@ -20,3 +20,16 @@ print("The result of given 1 is:", math(number1, number2))
 number3 = 40
 number4 = 30
 print("The result of given 2 is:", math(number3, number4))
+#Exercise 2
+#Write a program to iterate the first 10 numbers and in each iteration, print the sum of the current and previous number.
+#A simple use of the range() function and for loops.
+#start with the base value
+previous_num = 0
+#then the for loop
+for i in range(1, 11):
+    #a simple incrementor
+    next_num = previous_num + i
+    #print the results, pretty like
+    print("The current number is:", i,"\nThe previous number was:", previous_num, "\nThe sum of the two is:", next_num)
+    #now reset the previous number to the current number
+    previous_num = i
