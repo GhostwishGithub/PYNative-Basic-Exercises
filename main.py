@@ -33,3 +33,13 @@ for i in range(1, 11):
     print("The current number is:", i,"\nThe previous number was:", previous_num, "\nThe sum of the two is:", next_num)
     #now reset the previous number to the current number
     previous_num = i
+#Exercise 3
+#Print out every even index number from an input stream
+#first, get the input
+word = input("Enter the word you want counted:")
+print("Original word:", word)
+#now, get the length of the string
+size = len(word)
+#Now, count through the word. Remember: Computers start at 0.
+for i in range(0, size -1, 2):
+    print("index[", i, "]", word[i])
