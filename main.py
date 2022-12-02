@@ -43,3 +43,12 @@ size = len(word)
 #Now, count through the word. Remember: Computers start at 0.
 for i in range(0, size -1, 2):
     print("index[", i, "]", word[i])
+#Exercise 4
+#Write a program to remove characters from a string starting from zero up to 'n' and return a new string
+#We'll set up a function to use string slicing
+def remove_chars(word, n):
+    print("The original word was:", word)
+    x = word[n:]
+    return x
+print(remove_chars("Pynative", 4))
+print(remove_chars("Synthwave", 2))
