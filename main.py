@@ -52,3 +52,28 @@ def remove_chars(word, n):
     return x
 print(remove_chars("Pynative", 4))
 print(remove_chars("Synthwave", 2))
+#Exercise 5
+#Write a function to return True if the first and last number of a given list is same. If numbers are different then return False.
+#Very easy, especially given the fact that python all but manages the list for you
+#First, the exercise provides two lists for us
+numbers_x = [10, 20, 30, 40, 10]
+numbers_y = [75, 65, 35, 75, 30]
+#Remember, anything inside square brackets is a list in python
+#now, let's get a function going to do the work, yes?
+def first_and_last(list):
+    print("Using this list:", list)
+    #now here's the fun bit. python counts the list items for you, so all you have to do is get the first and last values.
+    #Now, how would you know how long the list is without cheating?
+    #Easy!
+    #you don't. You just throw in -1 to make it loop back to the LAST value. 
+    #Clever, huh?
+    first_num = list[0]
+    last_num = list[-1]
+    #boom, magic. Now it's just an if statement to get those true/false values out there
+    if first_num == last_num:
+        return True
+    else:
+        return False
+    #It's basically done. Just gotta use it.
+print("The result is:", first_and_last(numbers_x))
+print("The result is:", first_and_last(numbers_y))
