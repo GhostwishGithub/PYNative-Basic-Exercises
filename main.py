@@ -95,3 +95,11 @@ print("And here's the ones divisible by 5:")
 for x in num_list:
     if x % 5 == 0:
         print(x)
+
+#Exercise 7
+#Write a program to find how many times substring “Emma” appears in the given string.
+#Ah, I already know the answer: it's the count() method!
+#Simple. First? A string!
+a_string = "Emma likes to play tabletop games. Emma is a nerd. Emma is SUCH a nerd. Nerdy nerd nerd Emma!"
+count = a_string.count("Emma")
+print("Emma appeared", count, "times!")
