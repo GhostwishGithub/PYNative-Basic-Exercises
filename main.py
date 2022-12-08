@@ -103,3 +103,25 @@ for x in num_list:
 a_string = "Emma likes to play tabletop games. Emma is a nerd. Emma is SUCH a nerd. Nerdy nerd nerd Emma!"
 count = a_string.count("Emma")
 print("Emma appeared", count, "times!")
+
+#Exercise 8
+#Write a program to check if the given number is a palindrome number. A palindrome number is a number that is same after reverse. For example 545, is the palindrome numbers
+#I appreciate the definition because I had no idea.
+#I was a little stumped and had to do some research. Found it after a few googles.
+#We'll make a function to swap the number around
+def palindrome(number):
+    print("The number is:", number)
+    original_number = number
+#Then we just use a while loop to switch it
+    reversed_number = 0
+    while number > 0:
+        reminder = number % 10
+        reversed_number = (reversed_number * 10) + reminder
+        number = number // 10
+    #Then a simple if statement to check it.
+    if original_number == reversed_number:
+        print("It's a palindrome!")
+    else:
+        print("It's not a palindrome.")
+palindrome(121)
+palindrome(125)
