@@ -105,6 +105,18 @@ count = a_string.count("Emma")
 print("Emma appeared", count, "times!")
 
 #Exercise 8
+#Print the following pattern
+#So, this just wants us to print a pattern. I actually feel like the actual description is.. missing. I could approach this a hundred different ways, but, I opened the solution and saw what they meant.
+#I'll replicate it here.
+for x in range(10):
+    for y in range(x):
+        #I'm interested in this end feature. Hadn't seen it before.
+        #Oh neat. It stops the auto newline of print functions!
+        print (x, end=" ")
+    print("\n")
+    #and then we manually put the newline back in
+
+#Exercise 9
 #Write a program to check if the given number is a palindrome number. A palindrome number is a number that is same after reverse. For example 545, is the palindrome numbers
 #I appreciate the definition because I had no idea.
 #I was a little stumped and had to do some research. Found it after a few googles.
