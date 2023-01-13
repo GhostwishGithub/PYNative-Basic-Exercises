@@ -189,3 +189,11 @@ else:
     tax_payable += (income - 20000) * 20 / 100
 
 print("Total tax to pay is", tax_payable)
+
+#Exercise 13
+#Print multiplication table from 1 to 10
+#Oh this is easy. One nested loop is all it takes.
+for i in range(1, 11):
+    for j in range(1, 11):
+        print(i * j, end=" ")
+    print("\t\t")
