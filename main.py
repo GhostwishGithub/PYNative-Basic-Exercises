@@ -35,16 +35,16 @@ for i in range(1, 11):
     #now reset the previous number to the current number
     previous_num = i
 
-#Exercise 3
-#Print out every even index number from an input stream
-#first, get the input
-word = input("Enter the word you want counted:")
-print("Original word:", word)
-#now, get the length of the string
-size = len(word)
-#Now, count through the word. Remember: Computers start at 0.
-for i in range(0, size -1, 2):
-    print("index[", i, "]", word[i])
+# #Exercise 3 - commented out for expediency
+# #Print out every even index number from an input stream
+# #first, get the input
+# word = input("Enter the word you want counted:")
+# print("Original word:", word)
+# #now, get the length of the string
+# size = len(word)
+# #Now, count through the word. Remember: Computers start at 0.
+# for i in range(0, size -1, 2):
+#     print("index[", i, "]", word[i])
 
 #Exercise 4
 #Write a program to remove characters from a string starting from zero up to 'n' and return a new string
@@ -137,3 +137,20 @@ def palindrome(number):
         print("It's not a palindrome.")
 palindrome(121)
 palindrome(125)
+
+#Exercise 10
+#Given a two list of numbers, write a program to create a new list such that the new list should contain odd numbers from the first list and even numbers from the second list.
+def merge_list(list1, list2):
+    result_list = []
+
+    for num in list1:
+        if num % 2 != 0:
+            result_list.append(num)
+    for num in list2:
+        if num % 2 == 0:
+            result_list.append(num)
+    return result_list
+
+list1 = [10, 20, 25, 30, 35]
+list2 = [40, 45, 60, 75, 90]
+print("result list:", merge_list(list1, list2))
