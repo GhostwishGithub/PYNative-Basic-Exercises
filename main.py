@@ -154,3 +154,12 @@ def merge_list(list1, list2):
 list1 = [10, 20, 25, 30, 35]
 list2 = [40, 45, 60, 75, 90]
 print("result list:", merge_list(list1, list2))
+
+#Exercise 11
+#Write a program to extract each digit from an integer in the reverse order
+number = 7536
+print("Given number", number)
+while number > 0:
+    digit = number % 10
+    number = number // 10
+    print(digit, end=" ")
